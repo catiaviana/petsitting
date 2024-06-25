@@ -1,0 +1,76 @@
+#intro {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 4rem);
+    width: 100%;
+    max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    padding: 2rem;
+}
+
+.me {
+    position: absolute;
+    top: -4rem;
+    right: 0;
+    z-index: -1;
+    object-fit: cover;
+    height: 100vh;
+    max-width: 50%;
+}
+
+.introContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 50%;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;    
+}
+
+.hello{
+    font-size: medium;
+}
+.introName {
+    color: #337def;
+}
+.introJob {
+    color: white;
+}
+
+.introPara {
+    font-size: medium;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.btn {
+    display: flex;
+    align-items: center;
+    background: #337def;
+    margin: 1rem 0;
+    padding: 0.75re 2rem;
+    border: none;
+    cursor: pointer;
+}
+
+@media screen and (max-with:840px) {
+    .me {
+        right: -10vw;
+    }
+    .introContent {
+        font-size: 10vw;
+    }
+    .hello {
+        font-size: 4.5vw;
+    }
+}
+
+@media screen and (max-with:480px) {
+    .me {
+        right: -20vw;
+    }
+}
